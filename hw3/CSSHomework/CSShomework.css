@@ -1,0 +1,200 @@
+/* Ignore following classes */
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EEEEEE;
+}
+
+#intro{
+    color:rgb(0, 0, 0);
+    text-align: center;
+    margin: 50px;
+}
+
+.insideborder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.para{
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+h2{
+    font-size: medium;
+    font-weight: 200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Classes that you might find useful */
+/* Note* These classes do not cover every possibloe case to build you flags, you will have to continue to add your own*/
+
+
+.flag{
+    height: 300px;
+    width: 500px;
+    border-style: solid;
+    margin-bottom: 5rem;
+
+}
+
+.horiz{
+    display: flex;
+    flex-direction: row;
+}
+
+.twovert{
+    height: 50%;
+}
+
+.threevert{
+    height: 33.3%;
+}
+
+.sixvert{
+  height: 16.6%
+}
+.ninevert {
+  height: 11.1%;
+}
+
+.threehoriz{
+    width: 33.3%
+}
+.twohoriz{
+  width:50%
+}
+
+.skinny{
+    height: 17.5%;
+}
+
+.fat{
+    height: 30%;
+}
+
+.circle{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 85px;
+    top: 50px
+}
+.coat-of-arms { /* any div container that includes a coat of arms*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay{
+  position: relative;
+}
+
+#finland-cross {
+background-color:blue;
+   height: 100%;
+   position: relative;
+   width: 16.5%;
+   left: 140px;
+}
+#finland-cross:after {
+background-color: blue;
+ content: "";
+ height: 27%;
+ position: absolute;
+ width: 500px;
+ left: -140px;
+ top: 36%;
+}
+
+.greece-cross {
+    height: 167px;
+    width: 167px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+}
+
+#greece-cross-h {
+    height: 33.33px;
+    width: 100%;
+}
+
+#greece-cross-v {
+    height: 100%;
+    width: 33.33px;
+    position: absolute;
+    left: 66px;
+}
+
+.sl{
+  align-items: center;
+}
+
+.sl-left-block{
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 30%;
+  height: 85%;
+}
+.sl-right-block{
+  margin-left: 25px;
+  margin-top: 20px;
+  width: 56%;
+  height: 85%;
+}
+
+
+
+/* Colors/ Feel free to add your own! */
+
+.red{
+    background-color: red;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.lightblue{
+    background-color: lightblue;
+}
+
+.purple{
+    background-color: purple;
+}
+.white {
+  background-color: white;
+}
+.sl-yellow{
+  background-color: #ffd600;
+}
+.burgundy{
+  background-color: #AE002B;
+}

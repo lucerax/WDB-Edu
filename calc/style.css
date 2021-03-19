@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  margin: 25px;
+}
+.calculator {
+  /*
+  width: 300px;
+  height: 400px;
+  position: fixed;
+  top: 50%;
+  left:50%;
+  transform: translate(-40%, -50%);
+  background-color: black;
+  */
+  background: black;
+  border-radius: 50px;
+  color: white;
+  height: 600px;
+  padding: 20px;
+  position: fixed;
+  width: 300px;
+  top: 50%;
+  left:50%;
+  transform: translate(-40%, -50%);
+
+}
+
+.button-grid {
+  display: grid;
+  grid-row-gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.button-row {
+  display: flex;
+  align-content: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+
+.calc-button {
+  /*
+  background-color: #d8d9db;
+  text-align: center;
+  color: black;
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 50%;
+  font-size: 30px;
+  cursor: pointer;
+  */
+  align-items: center;
+  color: black;
+  background: #d8d9db;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  font-size: 30px;
+  height: 55px;
+  justify-content: center;
+  width: 55px;
+
+}
+
+.calc-button.operator {
+  background-color: orange;
+}
+.calc-button.double {
+  width: 118px;
+  grid-column: 1 / span 2; /*takes width 2 in grid*/
+  border-radius: 30px;
+}
+
+.calc-button.triple {
+  width: 185px;
+  grid-column: 1 / span 3; /*takes width 2 in grid*/
+  border-radius: 30px;
+}
+
+.screen {
+  color: white;
+  font-size: 40px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: right;
+  padding: 20px 5px;
+  height: 100px;
+}
